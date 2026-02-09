@@ -11,7 +11,15 @@ package com.mycompany.midterm;
  */
 public class ProductManager {
 
-     private String name;
+    private String name;
     private double price;
+    private double discount;
     
+    // Calculates the final price after applying the discount percentage
+    
+    public double calculateDiscount(){
+        
+     double discountAmount = price * (discount/100);
+     return price - discountAmount;
+    };
 }
